@@ -1,14 +1,17 @@
 div.game {
 }
 
-.game table {
+table.game {
     height: 500px;
     width: 500px;
     border: 1px solid;
 }
-
 .game td {
     text-align: center;
     vertical-align: center;
     border: solid 1px;
+}
+
+.invisible {
+    visibility: hidden;
 }
