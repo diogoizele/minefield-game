@@ -2,12 +2,13 @@ div.game {
 }
 
 .game table {
-
+    height: 500px;
+    width: 500px;
+    border: 1px solid;
 }
 
 .game td {
-    border: 1px solid;
-    width: 15px;
-    height: 15px;
-    margin: 0;
+    text-align: center;
+    vertical-align: center;
+    border: solid 1px;
 }
