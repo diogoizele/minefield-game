@@ -15,3 +15,8 @@ table.game {
 .invisible {
     visibility: hidden;
 }
+
+.flag {
+    border-radius: 50%;
+    background-color: red;
+}
