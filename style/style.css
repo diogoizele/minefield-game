@@ -1,0 +1,13 @@
+div.game {
+}
+
+.game table {
+
+}
+
+.game td {
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
