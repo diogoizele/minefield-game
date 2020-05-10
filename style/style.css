@@ -16,7 +16,7 @@ table.game {
     visibility: hidden;
 }
 
-.flag {
+td.flag {
     border-radius: 50%;
     background-color: red;
 }
