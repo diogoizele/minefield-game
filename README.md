@@ -1,4 +1,4 @@
-# Minefield
+# :game_die: Minefield :game_die:
 
 
 This project has a greater purpose in my learning about git and some concepts of web development + algorithms.
