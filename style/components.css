@@ -1,15 +1,26 @@
-div.game {
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 
 table.game {
     height: 500px;
     width: 500px;
-    border: 1px solid;
+    /* border: 1px solid; */
+    border-collapse: collapse;
 }
 .game td {
+
     text-align: center;
     vertical-align: center;
-    border: solid 1px;
+    border: solid 2px;
 }
 
 .invisible {

@@ -1,5 +1,5 @@
 (function () {
-    let mines = createRandomValueToArray(18, 18, 100) //(row, column, bomb)
+    let mines = createRandomValueToArray(18, 18, 50) //(row, column, bomb)
 
     renderGame(field(18, 18, mines))
 
@@ -10,7 +10,7 @@
         for (let row = 0; row < rowsCount; row++) {
             array[row] = []
             for (let column = 0; column < colsCount; column++) {
-                if (mines.map(position => JSON.stringify(position)).includes(`[${row},${column}]`)) {
+                if (mine.map(position => JSON.stringify(position)).includes(`[${row},${column}]`)) {
                     array[row][column] = '*'
                 } else {
                     array[row][column] = 0
@@ -46,7 +46,7 @@
                 let td = document.createElement('td')
                 let span = document.createElement('span')
                 span.textContent = column
-                span.setAttribute('class', 'invisible')
+                span.classList.add('invisible')
                 td.appendChild(span)
                 tr.appendChild(td)
             }
