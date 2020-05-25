@@ -26,7 +26,8 @@ table.game {
     border: solid 2px;
     height: 33px;
     width: 33px;
-    background-color: #e3e3e3;
+    /* background-color: #e3e3e3; */
+    background-color: rgb(160, 160, 160);
 }
 
 td span {

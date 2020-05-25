@@ -33,4 +33,9 @@ const td = document.querySelectorAll('td').forEach(td => {
         default:
             span.style.color = '#6c757d'
     }
+
+
+    // td.onclick = function() {
+    //     td.style.backgroundColor = '#e3e3e3'
+    // }
 })
