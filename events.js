@@ -1,5 +1,6 @@
 let table = document.querySelector('[field]')
 table.addEventListener('contextmenu', e => e.preventDefault())
+let rowsAndCollumnNumber = table.children.length
 
 document.querySelectorAll('td').forEach(td => {
 
@@ -10,9 +11,17 @@ document.querySelectorAll('td').forEach(td => {
 
 function clickTableData(event) {
     const cell = event.target
+    cell.classList.remove('flag')
     if (cell.textContent === '*') {
-        alert('perdeu playboy!')
-        document.querySelectorAll('span').forEach(span => span.classList.remove('invisible'))
+        alert('Você Perdeu!')
+        document.querySelectorAll('span').forEach(span => {
+            span.classList.remove('invisible')
+
+            if (span.textContent == '*') {
+
+                span.parentElement.innerHTML = `<img src="source/img/bomb2.png">`
+            }
+        })
     } else if (cell.textContent == 0) {
         const rows = document.querySelectorAll('tr')
         rows.forEach(row =>
@@ -43,5 +52,9 @@ function clickTableData(event) {
 
 
 function setFlagInTableData(event) {
-    event.target.setAttribute('class', 'flag')
+    event.target.classList.add('flag')
+
 }
+
+
+

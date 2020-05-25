@@ -1,7 +1,7 @@
 (function () {
-    let mines = createRandomValueToArray(18, 18, 50) //(row, column, bomb)
+    let mines = createRandomValueToArray(15, 15, 40) //(row, column, bomb)
 
-    renderGame(field(18, 18, mines))
+    renderGame(field(15, 15, mines))
 
 
     function field(rowsCount, colsCount, mine) {
